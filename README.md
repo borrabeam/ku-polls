@@ -7,5 +7,5 @@ Polls for Kasetsart University
 
 [Vision Statement](https://github.com/borrabeam/ku-polls/wiki/Vision-Statement)
 
-#Iteration
+# Iteration
 [Iteration 1](https://github.com/borrabeam/ku-polls/wiki/Iteration-1-Plan)
