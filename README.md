@@ -6,3 +6,5 @@ Polls for Kasetsart University
 [Requirements](https://github.com/borrabeam/ku-polls/wiki/Requirements)
 
 [Vision Statement](https://github.com/borrabeam/ku-polls/wiki/Vision-Statement)
+
+[Vision Statement](https://github.com/borrabeam/ku-polls/wiki/Vision-Statement)
