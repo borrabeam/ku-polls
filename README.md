@@ -9,3 +9,6 @@ Polls for Kasetsart University
 
 # Iteration
 [Iteration 1](https://github.com/borrabeam/ku-polls/wiki/Iteration-1-Plan)
+
+# Iteration 2
+[Iteration 2](https://github.com/borrabeam/ku-polls/wiki/Iteration-2-Plan)
