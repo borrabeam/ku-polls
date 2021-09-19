@@ -9,6 +9,7 @@ from .models import Question
 from django.urls import reverse
 
 
+
 class QuestionModelTests(TestCase):
 
     def test_was_published_recently_with_future_question(self):
@@ -74,7 +75,6 @@ class QuestionModelTests(TestCase):
         past_question = Question(pub_date=time,end_date=end_time)
         self.assertIs(past_question.can_vote(), False)
 
-    
     def test_can_vote_with_recent_question(self):
         """
         can_vote() return True for question pub_date is in time forvote
@@ -90,7 +90,7 @@ class QuestionModelTests(TestCase):
         """
 
         time = timezone.now() + datetime.timedelta(days=30)
-        end_time = time - date.timedelta(days=1)
+        end_time = time - datetime.timedelta(days=1)
         future_question = Question(pub_date=time, end_date=end_time)
         self.assertIs(future_question.can_vote(), False)
     
