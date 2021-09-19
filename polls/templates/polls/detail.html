@@ -1,6 +1,6 @@
-{{ question }}
+<h1>
 
-<h1>{{ question.question_text }}</h1>
+    {{ question.question_text }}</h1>
 
 {% if error_message %}
 <p><strong>{{ error_message }}</strong></p>{% endif %}
@@ -11,3 +11,5 @@
     <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br> {% endfor %}
     <input type="submit" value="Vote">
 </form>
+
+<a href="{% url 'polls:index' %}"><button> Back to List of Polls </button></a>

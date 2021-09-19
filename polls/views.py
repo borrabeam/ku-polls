@@ -1,9 +1,10 @@
-from django.shortcuts import render,get_object_or_404
+from django.shortcuts import render,get_object_or_404, redirect
 from django.http import HttpResponse,Http404,HttpResponseRedirect
 from django.template import loader
 from django.urls import reverse
 from django.views import generic
 from django.utils import timezone
+from django.contrib import messages
 
 from .models import Question, Choice
 
@@ -58,6 +59,14 @@ def vote(request, question_id):
         # with POST data. This prevents data from being posted twice if a
         # user hits the Back button.
         return HttpResponseRedirect(reverse('polls:results', args=(question.id,)))
+
+
+def vote_poll(request, question_id):
+    question = get_object_or_404(Question, pk=question_id)
+    if not question.can_vote():
+        messages.error(request, f"You are not allowed to vote this poll")
+        return redirect('polls:index')
+    return render(request, 'polls/detail.html', {'question': question})
 
 
 def get_queryset(self):
