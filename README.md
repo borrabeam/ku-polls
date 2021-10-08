@@ -1,3 +1,5 @@
+[![Build Status](https://app.travis-ci.com/borrabeam/ku-polls.svg?branch=main)](https://app.travis-ci.com/borrabeam/ku-polls)
+[![codecov](https://codecov.io/gh/borrabeam/ku-polls/branch/main/graph/badge.svg?token=QUMYRX5OUM)](https://codecov.io/gh/borrabeam/ku-polls)
 # ku-polls
 Polls for Kasetsart University
 
