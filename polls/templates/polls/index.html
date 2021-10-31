@@ -1,19 +1,12 @@
-<style>
-    ul {
-        list-style-type: none;
-    }
-</style>
-
 {% load static %}
-
-<h1>Polls</h1>
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+<h2>Polls</h2>
 {% if user.is_authenticated %}
 <p>Hello, {{ user.username }}</p>
-<a href="{% url 'logout' %}">Logout</a> {% else %}
-<a href="{% url 'login' %}">Login</a> {% endif %}
 
 
-<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}"> {% if messages %}
+
+{% if messages %}
 
 <ul class="messages ">
     {% for msg in messages %}
@@ -25,10 +18,16 @@
     {% for question in latest_question_list %}
     <li>
         {{ question.question_text }}
-        <a href="{% url 'polls:detail' question.id %} "> <button {% if not question.can_vote %} disabled {% endif %}>vote</button></a>
+        <a href="{% url 'polls:detail' question.id %} "> 
+            <button {% if not question.can_vote %} disabled {% endif %}>vote</button></a>
         <a href="{% url 'polls:results' question.id %} "> <button>results</button> </a>
     </li>
     {% endfor %}
-</ul>g {% else %}
+</ul> 
+{% else %}
 <p> No polls are available.</p>
 {% endif %}
+
+<a href="{% url 'logout' %}"><button type="button">Logout</button></a> {% else %}
+
+<a href="{% url 'login' %}">Login</a> {% endif %}

@@ -6,12 +6,15 @@
         {% csrf_token %} {{ form.as_p }}
         <p>
             <button type="submit">Login</button>
+            <a href="{% url 'signup' %}"> <button type="button">Signup</button> </a>
+
         </p>
-        <input type="hidden" name="next" value="{{next}}" />
+        <!-- <input type=" hidden " name="next " value="{{next}} " /> -->
     </form>
     {# If you have written a password_reset template, then add here #}
     <p>
-        <a href="{% url 'password_reset' %}">Forgot password?</a>
+
+        <a href="{% url 'password_reset' %} ">Forgot password?</a>
     </p>
 </body>
 

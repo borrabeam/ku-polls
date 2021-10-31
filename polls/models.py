@@ -54,7 +54,7 @@ class Choice(models.Model):
 
 class Vote(models.Model):
 
-    user = model.ForeignKey(
+    user = models.ForeignKey(
         User,
         null=False,
         blank=False,

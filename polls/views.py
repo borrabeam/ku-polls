@@ -6,7 +6,11 @@ from django.views import generic
 from django.utils import timezone
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from .models import Question, Choice
+from .models import Question, Choice, Vote
+from django.contrib.auth.models import User
+import logging
+
+logger = logging.getLogger("polls")
 
 # Create your views here.
 
@@ -62,7 +66,7 @@ def vote(request, question_id):
         user = request.user
         vote = get_vote_for_user(question, user)
         if not vote:
-            vote = Vote.objects.create(choice=selected_choice, voter=user)
+            vote = Vote.objects.create(choice=selected_choice, user=user)
         else:
             vote.choice = selected_choice
         vote.save()
@@ -71,14 +75,19 @@ def vote(request, question_id):
         return HttpResponseRedirect(reverse('polls:results',
                                         args=(question.id,)))
 
-
+@login_required
 def vote_poll(request, question_id):
     """Vote for the polls."""
     question = get_object_or_404(Question, pk=question_id)
+    vote = get_vote_for_user(question,request.user)
+    
     if not question.can_vote():
         messages.error(request, "You are not allowed to vote this poll")
         return redirect('polls:index')
-    return render(request, 'polls/detail.html', {'question': question})
+
+    if vote:
+        return render(request, 'polls/detail.html', {'question': question, "current_choice": vote.choice})
+    else: return render(request, 'polls/detail.html', {'question': question,"current_choice": vote})
 
 
 def get_queryset(self):
@@ -90,3 +99,10 @@ def get_queryset(self):
     return Question.objects.filter(
         pub_date__lte=timezone.now()
     ).order_by('-pub_date')[:5]
+
+def get_vote_for_user(question: Question,user: User):
+    """Return: vote of user."""
+    try:
+        return Vote.objects.get(user=user, choice__question=question)
+    except Vote.DoesNotExist:
+        return None
