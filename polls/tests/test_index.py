@@ -5,6 +5,16 @@ from polls.models import Question
 from django.urls import reverse
 
 
+
+def create_question(question_text, days, end_date):
+    """Create a question with the given `question_text` and\
+        published the given number of `days` offset to now\
+        (negative for questions published in the past,\
+        positive for questions that have yet to be published)."""
+    time = timezone.now() + datetime.timedelta(days=days)
+    end_time = timezone.now() + datetime.timedelta(days=days, hours=5)
+    return Question.objects.create(question_text=question_text, pub_date=time, end_date = end_time)
+
 class QuestionIndexViewTests(TestCase):
     """Index view questions test."""
 

@@ -3,7 +3,7 @@
 <h2>Polls</h2>
 {% if user.is_authenticated %}
 <p>Hello, {{ user.username }}</p>
-
+{% endif %}
 
 
 {% if messages %}
@@ -13,7 +13,8 @@
     <li class="{{msg.tags}} ">{{ msg }}</li>
     {% endfor %}
 </ul>
-{% endif %} {% if latest_question_list %}
+{% endif %} 
+{% if latest_question_list %}
 <ul>
     {% for question in latest_question_list %}
     <li>
@@ -25,9 +26,10 @@
     {% endfor %}
 </ul> 
 {% else %}
-<p> No polls are available.</p>
+<p>No polls are available.</p>
 {% endif %}
 
+{% if user.is_authenticated %}
 <a href="{% url 'logout' %}"><button type="button">Logout</button></a> {% else %}
 
-<a href="{% url 'login' %}">Login</a> {% endif %}
+<a href="{% url 'login' %}">Login</a> {% endif %} 
