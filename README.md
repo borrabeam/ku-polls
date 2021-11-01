@@ -16,4 +16,7 @@ Polls for Kasetsart University
 [Iteration 2](https://github.com/borrabeam/ku-polls/wiki/Iteration-2-Plan)
 
 # Iteration 3
+๊Username for login:
+Username: demo1 Password: Vote4me!
+Username: demo2 Password: Vote4me!2
 [Iteration 3](https://github.com/borrabeam/ku-polls/wiki/Iteration-3-Plan)
