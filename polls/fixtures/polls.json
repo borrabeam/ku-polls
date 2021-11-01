@@ -1,0 +1,157 @@
+[
+{
+  "model": "polls.question",
+  "pk": 1,
+  "fields": {
+    "question_text": "What's the color of mirror?",
+    "pub_date": "2021-10-31T11:26:21Z",
+    "end_date": "2021-11-30T11:26:22Z"
+  }
+},
+{
+  "model": "polls.question",
+  "pk": 2,
+  "fields": {
+    "question_text": "What is the resolution of the human eye?",
+    "pub_date": "2021-10-31T11:25:56Z",
+    "end_date": "2021-11-30T11:26:11Z"
+  }
+},
+{
+  "model": "polls.question",
+  "pk": 4,
+  "fields": {
+    "question_text": "mkdfg",
+    "pub_date": "2021-12-15T14:00:16Z",
+    "end_date": "2022-03-16T14:00:22Z"
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 15,
+  "fields": {
+    "question": 2,
+    "choice_text": "476 Megapixels"
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 16,
+  "fields": {
+    "question": 2,
+    "choice_text": "478 Megapixels"
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 17,
+  "fields": {
+    "question": 2,
+    "choice_text": "576 Megapixels"
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 18,
+  "fields": {
+    "question": 2,
+    "choice_text": "578 Megapixels"
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 20,
+  "fields": {
+    "question": 1,
+    "choice_text": "White"
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 21,
+  "fields": {
+    "question": 1,
+    "choice_text": "Silver"
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 22,
+  "fields": {
+    "question": 1,
+    "choice_text": "Blue"
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 23,
+  "fields": {
+    "question": 1,
+    "choice_text": "Green"
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 27,
+  "fields": {
+    "question": 4,
+    "choice_text": "fed"
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 28,
+  "fields": {
+    "question": 4,
+    "choice_text": "sd"
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 29,
+  "fields": {
+    "question": 4,
+    "choice_text": "dsf"
+  }
+},
+{
+  "model": "polls.choice",
+  "pk": 30,
+  "fields": {
+    "question": 4,
+    "choice_text": "pdf"
+  }
+},
+{
+  "model": "polls.vote",
+  "pk": 1,
+  "fields": {
+    "user": 3,
+    "choice": 17
+  }
+},
+{
+  "model": "polls.vote",
+  "pk": 2,
+  "fields": {
+    "user": 3,
+    "choice": 21
+  }
+},
+{
+  "model": "polls.vote",
+  "pk": 3,
+  "fields": {
+    "user": 8,
+    "choice": 23
+  }
+},
+{
+  "model": "polls.vote",
+  "pk": 4,
+  "fields": {
+    "user": 8,
+    "choice": 16
+  }
+}
+]
