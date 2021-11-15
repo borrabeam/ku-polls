@@ -328,7 +328,7 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$260000$BjV8Pj6zpvMdiBTY9XpUhY$Eg1Jk2gxlUhEgkvRKTqFnvd0LddREotbifRAjLSB2mU=",
-    "last_login": "2021-11-15T08:44:38.389Z",
+    "last_login": "2021-11-15T09:17:44.638Z",
     "is_superuser": true,
     "username": "beam",
     "first_name": "",
@@ -346,7 +346,7 @@
   "pk": 2,
   "fields": {
     "password": "pbkdf2_sha256$260000$hQgKNtP05Ast1MuHfw1vmK$JSrfLF9vwYqBWZX2Ziu1RJ8XFLMX45E9Xauz8HwdVWs=",
-    "last_login": null,
+    "last_login": "2021-11-15T09:16:53.131Z",
     "is_superuser": false,
     "username": "demo1",
     "first_name": "",
@@ -361,10 +361,10 @@
 },
 {
   "model": "auth.user",
-  "pk": 3,
+  "pk": 4,
   "fields": {
-    "password": "pbkdf2_sha256$260000$YJvk66pGAhCZWdnaZ0Prbl$sLQtRd0ay/hrAOhaQdXMs6q1/VMxagdjGtbdpyttnMY=",
-    "last_login": null,
+    "password": "pbkdf2_sha256$260000$e3kjp5bnD5mS7qQ2HMbjqj$aXZFRDan8FKxT6hizNvXLUxIKFrIJqSShBRoYFuX3u0=",
+    "last_login": "2021-11-15T09:18:41.445Z",
     "is_superuser": false,
     "username": "demo2",
     "first_name": "",
@@ -372,7 +372,7 @@
     "email": "",
     "is_staff": false,
     "is_active": true,
-    "date_joined": "2021-11-15T08:52:30.758Z",
+    "date_joined": "2021-11-15T09:18:22.230Z",
     "groups": [],
     "user_permissions": []
   }
