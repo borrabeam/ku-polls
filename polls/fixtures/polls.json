@@ -1,157 +1,84 @@
 [
 {
   "model": "polls.question",
-  "pk": 1,
-  "fields": {
-    "question_text": "What's the color of mirror?",
-    "pub_date": "2021-10-31T11:26:21Z",
-    "end_date": "2021-11-30T11:26:22Z"
-  }
-},
-{
-  "model": "polls.question",
   "pk": 2,
   "fields": {
-    "question_text": "What is the resolution of the human eye?",
-    "pub_date": "2021-10-31T11:25:56Z",
-    "end_date": "2021-11-30T11:26:11Z"
+    "question_text": "What's the color of mirror?",
+    "pub_date": "2021-11-15T08:48:21Z",
+    "end_date": "2021-12-31T08:48:27Z"
   }
 },
 {
   "model": "polls.question",
+  "pk": 3,
+  "fields": {
+    "question_text": "What is the resolution of the human eye?",
+    "pub_date": "2021-11-15T08:50:01Z",
+    "end_date": "2021-12-31T08:50:06Z"
+  }
+},
+{
+  "model": "polls.choice",
   "pk": 4,
   "fields": {
-    "question_text": "mkdfg",
-    "pub_date": "2021-12-15T14:00:16Z",
-    "end_date": "2022-03-16T14:00:22Z"
-  }
-},
-{
-  "model": "polls.choice",
-  "pk": 15,
-  "fields": {
     "question": 2,
-    "choice_text": "476 Megapixels"
-  }
-},
-{
-  "model": "polls.choice",
-  "pk": 16,
-  "fields": {
-    "question": 2,
-    "choice_text": "478 Megapixels"
-  }
-},
-{
-  "model": "polls.choice",
-  "pk": 17,
-  "fields": {
-    "question": 2,
-    "choice_text": "576 Megapixels"
-  }
-},
-{
-  "model": "polls.choice",
-  "pk": 18,
-  "fields": {
-    "question": 2,
-    "choice_text": "578 Megapixels"
-  }
-},
-{
-  "model": "polls.choice",
-  "pk": 20,
-  "fields": {
-    "question": 1,
     "choice_text": "White"
   }
 },
 {
   "model": "polls.choice",
-  "pk": 21,
+  "pk": 5,
   "fields": {
-    "question": 1,
-    "choice_text": "Silver"
-  }
-},
-{
-  "model": "polls.choice",
-  "pk": 22,
-  "fields": {
-    "question": 1,
+    "question": 2,
     "choice_text": "Blue"
   }
 },
 {
   "model": "polls.choice",
-  "pk": 23,
+  "pk": 6,
   "fields": {
-    "question": 1,
+    "question": 2,
     "choice_text": "Green"
   }
 },
 {
   "model": "polls.choice",
-  "pk": 27,
+  "pk": 7,
   "fields": {
-    "question": 4,
-    "choice_text": "fed"
+    "question": 2,
+    "choice_text": "Silver"
   }
 },
 {
   "model": "polls.choice",
-  "pk": 28,
+  "pk": 8,
   "fields": {
-    "question": 4,
-    "choice_text": "sd"
+    "question": 3,
+    "choice_text": "476 Megapixels"
   }
 },
 {
   "model": "polls.choice",
-  "pk": 29,
+  "pk": 9,
   "fields": {
-    "question": 4,
-    "choice_text": "dsf"
+    "question": 3,
+    "choice_text": "478 Megapixels"
   }
 },
 {
   "model": "polls.choice",
-  "pk": 30,
+  "pk": 10,
   "fields": {
-    "question": 4,
-    "choice_text": "pdf"
+    "question": 3,
+    "choice_text": "576 Megapixels"
   }
 },
 {
-  "model": "polls.vote",
-  "pk": 1,
+  "model": "polls.choice",
+  "pk": 11,
   "fields": {
-    "user": 3,
-    "choice": 17
-  }
-},
-{
-  "model": "polls.vote",
-  "pk": 2,
-  "fields": {
-    "user": 3,
-    "choice": 21
-  }
-},
-{
-  "model": "polls.vote",
-  "pk": 3,
-  "fields": {
-    "user": 8,
-    "choice": 23
-  }
-},
-{
-  "model": "polls.vote",
-  "pk": 4,
-  "fields": {
-    "user": 8,
-    "choice": 16
+    "question": 3,
+    "choice_text": "578 Megapixels"
   }
 }
 ]
